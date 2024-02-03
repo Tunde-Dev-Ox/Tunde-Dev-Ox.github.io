@@ -55,9 +55,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    @include mobile {
-        width: 100%;
-    }
 }
 
 .logo {
@@ -75,6 +72,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+      @include mobile {
+        display: none;
+    }
 }
 
 .icon {
@@ -737,3 +737,39 @@
     }
 }
 
+
+
+//footer 
+.footer {
+    width: 100%;
+}
+
+.footer-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.icon-lower-wrapper {
+    display: none;
+    @include mobile {
+        display: flex;
+    }
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 400;
+        font-family: 'text-tunde, sans-serif, cursive';
+        line-height: 1.1;
+        max-width: 680px;
+        color: $primary-color;
+}
