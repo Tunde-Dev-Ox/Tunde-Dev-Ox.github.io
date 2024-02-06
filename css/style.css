@@ -780,6 +780,20 @@
   color: #1a1818;
 }
 
+@keyframes fadeIn-slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.page {
+  animation: fadeIn-slideDown 2s ease-in-out;
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
