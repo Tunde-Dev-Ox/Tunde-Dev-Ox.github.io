@@ -11,16 +11,24 @@
   width: 100%;
   height: auto;
   background-color: inherit;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
   margin: 0 auto;
 }
 @media (max-width: 480px) {
   .header-container {
     height: 60px;
+  }
+}
+
+.header-sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #ece7e1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 480px) {
+  .header-sticky {
+    padding: 10px;
   }
 }
 
@@ -611,6 +619,12 @@
   margin-bottom: 1rem;
 }
 
+.hobbies a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
 .blog-main {
   width: 100%;
   background-color: inherit;
@@ -778,20 +792,6 @@
   line-height: 1.1;
   max-width: 680px;
   color: #1a1818;
-}
-
-@keyframes fadeIn-slideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.page {
-  animation: fadeIn-slideDown 2s ease-in-out;
 }
 
 *, ::before, ::after {
